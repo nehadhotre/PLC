@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+
+    <!-- <form method="POST" action="http://www.hello.com/api/addSales"></form> -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="txtCustomerName">Customer Name</label>
+                    <input id="txtCustomerName" type="text" class="form-control" placeholder="Enter the customer Name">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="ddlCustomerType">Customer Type:</label>
+                    <select id="ddlCustomerType" class="form-control">
+                        <option value="Select Customer Type">Select Customer Type</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Gold">Gold</option>
+                        <option value="Platinum">Platinum</option>
+                        <option value="Diamond">Diamond</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="txtState">State</label>
+                    <input id="txtState" type="text" class="form-control" placeholder="Enter the State">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="txtProductName">Product Name</label>
+                    <input id="txtProductName" type="text" class="form-control" placeholder="Enter the Product">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="txtProductPrice">Product Price</label>
+                    <input id="txtProductPrice" type="number" class="form-control"
+                        placeholder="Enter the Product Price">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <label for="txtQuantity">Quantity</label>
+                    <input id="txtQuantity" type="number" class="form-control" placeholder="Enter the Quantity">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="form-group">
+                    <!-- <input id="btnSubmit" type="submit" class="btn btn-primary"> -->
+                    <button id="btnSubmit" class="btn btn-primary" onclick="onSubmitButtonClickEvent();">Submit</button>
+                    <button id="btnCancel" class="btn btn-danger" onclick="onCancelButtonClickEvent();">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="../Lib/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<script src="../Model/customerModel.js"></script>
+<script src="../Model/productModel.js"></script>
+<script src="../Model/discountModel.js"></script>
+<script src="../Model/gstModel.js"></script>
+<script src="../Model/salesModel.js"></script>
+<script src="../BL/salesBL.js"></script>
+<script src="../Controller/salesController.js"></script>
+
+
+</html>
